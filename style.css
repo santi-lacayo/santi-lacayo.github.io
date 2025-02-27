@@ -9,6 +9,10 @@
     padding: 10px 20px;
 }
 
+.topnav a:hover {
+    color: black;
+    background-color: orange;
+}
 
 body {
     font-family:Arial, Helvetica, sans-serif;
@@ -22,4 +26,9 @@ a:link {
 
 img {
     width: 100%;
+}
+
+.block {
+    border: 2px solid orange;
+    display: inline-block;
 }
