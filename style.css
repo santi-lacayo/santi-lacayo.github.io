@@ -32,3 +32,38 @@ img {
     border: 2px solid orange;
     display: inline-block;
 }
+
+.box {
+    border: 2px solid orange;
+    padding: 50px;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@keyframes background {
+    0%   {background-color: orange;}
+    25%  {background-color: rgb(0, 255, 140);}
+    50%  {background-color: rgb(0, 179, 255);}
+    75%  {background-color: rgb(0, 66, 246);}
+    100% {background-color: rgb(19, 6, 159);}
+}
+
+.box:hover{
+    animation-name: background;
+    animation-duration: 5s;
+}
+
+.box-2 {
+    border: 2px solid orange;
+    width: 300px; 
+    margin-top: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: none;
+}
+
+.box-2:hover {
+    text-transform: uppercase;
+}
