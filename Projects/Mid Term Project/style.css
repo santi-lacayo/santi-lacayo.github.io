@@ -1,0 +1,262 @@
+
+/*css for index*/
+
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-family: 'Cinzel';
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url(./cinzel/cinzel-regular.otf);
+}
+
+.header1 {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    z-index: 10; 
+}
+
+.title1 {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.logo {
+    position: absolute;
+}
+
+.logo img {
+    height: 65px;
+    width: auto;
+
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(135, 133, 104);
+    text-align: center;
+    padding: 10px;
+    word-spacing: 50px;
+    box-sizing: border-box;
+    top: 80px;
+    z-index: 10;
+}
+
+.navbar a {
+    display: inline-block;
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar :hover {
+    color: rgb(213, 204, 171);
+}
+
+.info {
+    margin-top: 200px; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+    font-size: 20px;
+}
+
+.row {
+    margin-top: 80px;
+    display: flex;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 4px;
+}
+.column img {
+    width: 100%;
+}
+
+
+.infobox {
+    padding: 80px;
+    margin: 8px;
+    background-color: rgb(53, 64, 36);
+    color: antiquewhite;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .footer p {
+    width: 40%;
+    font-size: 40px;
+    max-width: 200px;
+  }
+  
+  .footer img {
+    width: 80%;
+    max-height: 350px; /* Adjust as needed */
+    object-fit: cover; /* This will maintain aspect ratio */
+  }
+
+  /*css for Accomodations*/
+
+  .container1 {
+    margin-top: 120px;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+
+  .container1 > div {
+    background-color: rgb(53, 64, 36);
+    color: antiquewhite;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .container1 img {
+    width: 100%;
+    align-content: center;
+  }
+
+  .container1 p {
+    font-family: 'Raleway';
+    font-weight: 100;
+  }
+
+  /*css for About us*/
+
+  .about {
+    background-image: url(./photos/IMG_3121.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin: 8px;
+    margin-top: 130px;
+    color: antiquewhite;
+    font-size: 25px;
+    padding: 0.5px;
+    padding-left: 10px;
+    min-width: fit-content;
+  }
+
+  .about p {
+    font-family: 'Raleway';
+    font-weight: 100;
+  }
+
+  /*css for Dining*/
+
+  .food-text h2 {
+    margin-top: 150px;
+    color: black;
+    text-align: center;
+  }
+
+  .food {
+    background-color: #332c0f;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 180px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .food-transition {
+    margin-top: 150px;
+   
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .food-transition img{
+    transition: transform 3s, opacity 3s;
+    width: 300px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .spin {
+   transform: rotate(360deg); 
+  }
+  
+  .restaurant-style {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 35px;
+  }
+
+  .restaurant-style img{
+    width: 100%;
+    display: block;
+  }
+
+  /*css for Experiences*/
+
+  .slideshow-container {
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  .slideshow {
+    width: 300px;
+  }
+
+.button{
+    font-size: 30px;
+    background-color: #332c0f;
+    color: antiquewhite;
+    border-radius: 30px;
+}
+  .display-left {
+    transform: translate(-365px);
+  }
+
+  .display-right {
+    transform: translate(10px);
+
+  }
+
+
+
+
