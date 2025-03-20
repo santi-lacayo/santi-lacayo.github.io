@@ -1,11 +1,13 @@
 
 /*css for index*/
 
+/*sets the backgroud color for all the website + no margin*/
 body {
     margin: 0;
     background-color: antiquewhite;
 }
 
+/*Defines a font for all the h1 in the website*/
 h1 {
     font-family: 'Cinzel';
 }
@@ -15,6 +17,7 @@ h1 {
     src: url(./cinzel/cinzel-regular.otf);
 }
 
+/*specific code for header area title + logo*/
 .header1 {
     position: fixed;
     width: 100%;
@@ -23,9 +26,10 @@ h1 {
     display: flex;
     align-items: center;
     height: 80px;
-    z-index: 10; 
+    z-index: 10; /*I learned how to use this with chat gpt look at the screenshogt of the chat in the photos folder: Screenshot 2025-03-19 at 5.51.40 p.m.png.*/
 }
 
+/*title*/
 .title1 {
     text-align: center;
     position: fixed;
@@ -33,16 +37,19 @@ h1 {
     top: 0px;
 }
 
+/*palm tree logo*/
 .logo {
     position: absolute;
 }
 
+/*define size and position of palm tree*/
 .logo img {
     height: 65px;
     width: auto;
 
 }
 
+/*creates the navbar greenbox with different text*/
 .navbar {
     position: fixed;
     width: 100%;
@@ -55,6 +62,7 @@ h1 {
     z-index: 10;
 }
 
+/*text inside navbar*/
 .navbar a {
     display: inline-block;
     color: antiquewhite;
@@ -62,10 +70,12 @@ h1 {
     font-size: 20px;
 }
 
+/*hover for text inside navbar*/
 .navbar :hover {
     color: rgb(213, 204, 171);
 }
 
+/*introductory parragraph*/
 .info {
     margin-top: 200px; 
     text-align: center;
@@ -75,12 +85,14 @@ h1 {
     font-size: 20px;
 }
 
+/*makes one row for images*/
 .row {
     margin-top: 80px;
     display: flex;
     padding: 0 4px;
 }
 
+/*makes three columns for images*/
 .column {
     flex: 33.33%;
     padding: 4px;
@@ -89,7 +101,7 @@ h1 {
     width: 100%;
 }
 
-
+/*bottom box for image + text*/
 .infobox {
     padding: 80px;
     margin: 8px;
@@ -102,18 +114,21 @@ h1 {
     box-sizing: border-box;
   }
   
+  /*control the layout of both the text and image*/
   .footer {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
   }
   
+  /*text settings*/
   .footer p {
     width: 40%;
     font-size: 40px;
     max-width: 200px;
   }
   
+  /*image settings*/
   .footer img {
     width: 80%;
     max-height: 350px; /* Adjust as needed */
@@ -122,6 +137,7 @@ h1 {
 
   /*css for Accomodations*/
 
+  /*makes a container that will create a grid with boxes*/
   .container1 {
     margin-top: 120px;
     display: grid;
@@ -131,6 +147,7 @@ h1 {
     padding: 20px;
   }
 
+  /*specifications for geberal box layout*/
   .container1 > div {
     background-color: rgb(53, 64, 36);
     color: antiquewhite;
@@ -151,6 +168,7 @@ h1 {
 
   /*css for About us*/
 
+  /*layout for the whole abou page with an image as background*/
   .about {
     background-image: url(./photos/IMG_3121.jpg);
     background-size: cover;
@@ -164,6 +182,7 @@ h1 {
     min-width: fit-content;
   }
 
+  /*text inside the about page*/
   .about p {
     font-family: 'Raleway';
     font-weight: 100;
@@ -171,12 +190,14 @@ h1 {
 
   /*css for Dining*/
 
+  /*parragraph describing the restaurant*/
   .food-text h2 {
     margin-top: 150px;
     color: black;
     text-align: center;
   }
 
+  /*background where plates are going to be*/
   .food {
     background-color: #332c0f;
     display: flex;
@@ -189,6 +210,7 @@ h1 {
     
   }
 
+  /*food transition*/
   .food-transition {
     margin-top: 150px;
    
@@ -199,6 +221,7 @@ h1 {
     cursor: pointer;
   }
 
+  /*set a transition that will rotate and change opacity*/
   .food-transition img{
     transition: transform 3s, opacity 3s;
     width: 300px;
@@ -208,20 +231,24 @@ h1 {
     align-items: center;
   }
 
+  /*opacity controller*/
   .hidden {
     opacity: 0;
   }
 
+  /*rotate controller*/
   .spin {
    transform: rotate(360deg); 
   }
   
+  /*make a box to put the image of a restaurant*/
   .restaurant-style {
     padding: 20px;
     box-sizing: border-box;
     margin-left: 35px;
   }
 
+  /*image of the restaurant*/
   .restaurant-style img{
     width: 100%;
     display: block;
@@ -229,6 +256,7 @@ h1 {
 
   /*css for Experiences*/
 
+  /*make a photo slideshow which was copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp*/
   .slideshow-container {
     display: flex;
     margin-top: 200px;
@@ -242,16 +270,19 @@ h1 {
     width: 300px;
   }
 
+/*create two buttons to control the slideshow */
 .button{
     font-size: 30px;
     background-color: #332c0f;
     color: antiquewhite;
     border-radius: 30px;
 }
+  /*left button*/
   .display-left {
     transform: translate(-365px);
   }
 
+  /*right button*/
   .display-right {
     transform: translate(10px);
 

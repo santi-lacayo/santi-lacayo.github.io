@@ -1,3 +1,4 @@
+//@sd5056@nyu.edu helped me with this part of the code
 function toggleImages() {
     const img1 = document.getElementById("image1");
     const img2 = document.getElementById("image2"); 
@@ -14,6 +15,7 @@ function toggleImages() {
     }
 }
 
+//the idea of this slideshow comes from: https://www.w3schools.com/w3css/w3css_slideshow.asp
 var slideIndex = 1;
 showDivs(slideIndex);
 
