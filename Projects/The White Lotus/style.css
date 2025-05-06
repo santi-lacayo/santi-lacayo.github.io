@@ -1,0 +1,399 @@
+
+/*css for index*/
+
+/*sets the backgroud color for all the website + no margin*/
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+/*Defines a font for all the h1 in the website*/
+h1 {
+    font-family: 'Cinzel';
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url(./cinzel/cinzel-regular.otf);
+}
+
+/*specific code for header area title + logo*/
+.header1 {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 80px;
+  z-index: 10;
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(53, 64, 36);
+  color: antiquewhite;
+  border-radius: 20px;
+  cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+button:hover {
+  background-color: rgb(32, 40, 22);
+}
+
+.booking {
+  margin-right: 40px;
+}
+
+/*title*/
+.title1 {
+  text-align: center;
+  flex-grow: 1; /* Allow it to take available space */
+}
+
+/*palm tree logo*/
+.logo {
+  margin-left: 20px; 
+}
+
+/*define size and position of palm tree*/
+.logo img {
+  height: 65px;
+  width: auto;
+  display: block; /* Ensures proper rendering */
+}
+
+/*creates the navbar greenbox with different text*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(135, 133, 104);
+    text-align: center;
+    padding: 10px;
+    word-spacing: 50px;
+    box-sizing: border-box;
+    top: 80px;
+    z-index: 10;
+}
+
+/*text inside navbar*/
+.navbar a {
+    display: inline-block;
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*hover for text inside navbar*/
+.navbar :hover {
+    color: rgb(213, 204, 171);
+}
+
+/*introductory parragraph*/
+.info {
+    margin-top: 200px; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+    font-size: 20px;
+}
+
+/*makes one row for images*/
+.row {
+    margin-top: 80px;
+    display: flex;
+    padding: 0 4px;
+}
+
+/*makes three columns for images*/
+.column {
+    flex: 33.33%;
+    padding: 4px;
+}
+.column img {
+    width: 100%;
+}
+
+/*bottom box for image + text*/
+.infobox {
+    padding: 80px;
+    margin: 8px;
+    background-color: rgb(53, 64, 36);
+    color: antiquewhite;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  /*control the layout of both the text and image*/
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  /*text settings*/
+  .footer p {
+    width: 40%;
+    font-size: 40px;
+    max-width: 200px;
+  }
+  
+  /*image settings*/
+  .footer img {
+    width: 80%;
+    max-height: 350px; /* Adjust as needed */
+    object-fit: cover; /* This will maintain aspect ratio */
+  }
+
+  /*css for Accomodations*/
+
+  /*makes a container that will create a grid with boxes*/
+  .container1 {
+    margin-top: 120px;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+
+  /*specifications for geberal box layout*/
+  .container1 > div {
+    background-color: rgb(53, 64, 36);
+    color: antiquewhite;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .container1 > div:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Optional: adds shadow on hover */
+}
+
+  .container1 img {
+    width: 100%;
+    align-content: center;
+  }
+
+  .container1 p {
+    font-family: 'Raleway';
+    font-weight: 100;
+  }
+
+  /*css for About us*/
+
+  /*layout for the whole abou page with an image as background*/
+  .about {
+    background-image: url(./photos/IMG_3121.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin: 8px;
+    margin-top: 130px;
+    color: antiquewhite;
+    font-size: 25px;
+    padding: 0.5px;
+    padding-left: 10px;
+    min-width: fit-content;
+  }
+
+  /*text inside the about page*/
+  .about p {
+    font-family: 'Raleway';
+    font-weight: 100;
+  }
+
+  /*css for Dining*/
+
+  /*parragraph describing the restaurant*/
+  .foodpage {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  }
+.food-text h2 {
+  margin-top: 150px;
+  color: black;
+  text-align: center;
+}
+
+/*background where plates are going to be*/
+.food {
+  background-color: #332c0f;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between; /* Changed from center to space-between */
+  align-items: center;
+}
+
+/*food container to take exactly half the space*/
+.food-container {
+  width: 100%; /* Taking slightly less than half to account for margins */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*food transition*/
+.food-transition {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative; /* Added to make absolute positioning of children work */
+}
+
+/*set a transition that will rotate and change opacity*/
+.food-transition img {
+  transition: transform 3s, opacity 3s;
+  width: 450px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*opacity controller*/
+.hidden {
+  opacity: 0;
+}
+
+/*rotate controller*/
+.spin {
+  transform: rotate(360deg);
+}
+
+/*menu container to take exactly half the space*/
+.menu-container {
+  width: 48%; 
+}
+
+.menu {
+  display: flex;
+  justify-content: center; 
+  padding: 20px;
+  width: 100%;
+}
+
+.menu object {
+  width: 100%;
+  margin-right: 60px;
+  height: 600px; 
+  border: none; /*remove the default border pdf's have*/
+  outline: none;
+}
+
+/*make a box to put the image of a restaurant*/
+  .restaurant-style {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+  }
+
+/*image of the restaurant*/
+.restaurant-style img {
+  width: 100%;
+  display: block;
+}
+
+  /*css for Experiences*/
+
+  /*make a photo slideshow which was copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp*/
+  .slideshow-container {
+    max-width: 1200px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    position: relative;
+
+  }
+
+  /*makes flex to display the image on one side and description next to it*/
+  .carousel-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  .slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/*sets the experience text to take half sceen*/
+.description {
+  margin-left: 40px;
+  font-size: 35px;
+  width: 100%;
+  font-family: 'Raleway';
+}
+
+
+  .mySlides {
+      display: none; 
+      position: relative; 
+  }
+
+  /*sets the images to take the other half*/
+  .mySlides img {
+  width: 50%; 
+  height: 100%;
+  object-fit: cover;
+  margin-left: 10%;
+  }
+
+  .imgtext h4{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 10px 12%;
+    
+  }
+
+/*create two buttons to control the slideshow */
+.button {
+  font-size: 30px;
+  background-color: #332c0f;
+  color: antiquewhite;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: absolute; 
+  z-index: 10;
+  top: 65%; /* vertical center */
+  transform: translateY(-50%); /* adjust from center */
+}
+
+/* Left button positioned at the left side */
+.display-left {
+  left: 40px; /* Fixed distance from left edge */
+}
+
+/* Right button positioned at the right side */
+.display-right {
+  right: 40px; /* Fixed distance from right edge */
+}
+
+  @media (max-width: 768px) {
+    .description {
+      font-size: 24px; /* smaller font when the screen is smaller */
+    }
+  
+    .imgtext {
+      font-size: 24px; /* make the titles smaller too */
+    }
+  }
+
+
+
+

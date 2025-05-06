@@ -1,0 +1,68 @@
+<!-- claud helped me to put the format I needed for my calendar (reference in photos folder) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Your Stay</title>
+    <!-- the calendar extension I'm using for the website -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
+    <!-- style of the calendar -->
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h2 {
+            text-align: center;
+            color: #332c0f;
+            margin-bottom: 20px;
+        }
+        #calendar {
+            max-width: 90%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .fc-day-today {
+            background-color: rgba(51, 44, 15, 0.1) !important;
+        }
+        .fc-button-primary {
+            background-color: #332c0f !important;
+            border-color: #332c0f !important;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select Your Dates</h2>
+    <div id="calendar"></div>
+    <!-- js of the calendar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                timeZone: 'UTC', //define time zone of calendar
+                initialView: 'dayGridMonth', //set the view to show months and each day
+                selectable: true, //let's you pick dates within the calendar
+                selectMirror: true, //mirrors the dates you selected, shades them 
+                editable: true,
+                //create a header for the calendar
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,dayGridWeek'
+                },
+                //function that pops an alert of the dates you selected in the calenar
+                select: function(info) {
+                    alert('Selected dates: ' + info.startStr + ' to ' + info.endStr);
+                }
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+</html>

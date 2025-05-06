@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The White Lotus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="foodpage">
+    <div class="header1">
+        <div class="logo">
+            <img src="./photos/logo.png">
+        </div>
+        <div class="title1">
+            <h1>DINING</h1>
+        </div>
+        <div class="booking">
+            <button id="bookButton">Book</button>
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="./">Home</a>
+        <a href="./Accomodations.html">Accomodations</a>
+        <a href="./Experiences.html">Experiences</a>
+        <a href="./Dining.html">Dining</a>
+        <a href="./AboutUs.html">About-Us</a>
+    </div>
+    
+    <!-- class that contains the text in this page -->
+    <div class="food-text">
+        <h2>These are some of the exquisite plates that we have in our Michellin star restaurant click the plate to discover more</h2>
+    </div>
+    
+    <!-- class for everything happening to the food plate -->
+    <div class="food">
+        <!-- Container for the food transition to take half the screen -->
+        <div class="food-container">
+            <!-- define that for this class when clicking it will toggle the effect -->
+            <div class="food-transition" onclick="toggleImages()">
+                <!-- define each element with an ID to be able to call it in the javascript -->
+                <img src="./photos/19317.png" id="image1" class="active"> <!-- define one of the images as active so the cycle works -->
+                <img src="./photos/29705.png" id="image2" class="hidden"> <!-- set all the others to hidden -->
+                <img src="./photos/plate.png" id="image3" class="hidden">
+                <img src="./photos/plate2.png" id="image4" class="hidden">
+                <img src="./photos/plate4.png" id="image5" class="hidden">
+            </div>
+        </div>
+        
+        <!-- Container for the menu to take half the screen -->
+        <div class="menu-container">
+            <div class="menu">
+                <object data="./photos/menu.pdf" type="application/pdf"></object> <!-- adding a pdf document -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- class for an image at the bottom of the page -->
+    <div class="restaurant-style">
+        <img src="./photos/KOH_756_original.jpg">
+    </div>
+    <script src="js.js"></script>
+    <script src="button.js"></script>
+</div>
+</body>
+</html>

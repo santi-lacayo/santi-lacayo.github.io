@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The White Lotus</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header1">
+            <div class="logo">
+                <img src="./photos/logo.png">
+            </div>
+            <div class="title1">
+                <h1>EXPERIENCES</h1>
+            </div>
+            <div class="booking">
+                <button id="bookButton">Book</button>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="./">Home</a>
+            <a href="./Accomodations.html">Accomodations</a>
+            <a href="./Experiences.html">Experiences</a>
+            <a href="./Dining.html">Dining</a>
+            <a href="./AboutUs.html">About-Us</a>
+        </div>
+    <!-- class with a text showing information about experiences -->
+    <div class="experience-info">
+        <p>WE HAVE DIFFERENT ACTIVITIES TO MAKE YOUR STAY WITH US MORE ENJOYABLE, TAKE A LOOK AT WHAT WE HAVE FOR YOU</p>
+    </div>
+    <!-- class that includes all the images that will be part of the slideshow -->
+    <div class="slideshow-container">
+        <!-- class to display the slideshow in two columns -->
+        <div class="carousel-row">
+            <!-- class that contains all the information of the slideshow -->
+            <div class="mySlides">
+                <div class="imgtext"><h4>Surfing</h4></div>
+                <!-- class that contains the image + text description -->
+                <div class="slide-content">
+                    <img class="slideshow" src="./photos/IMG_6330.JPG" alt="Surfing">
+                    <div class="description">
+                        <p>Feel the thrill of the ocean with our surfing experiences, perfect for both beginners and seasoned surfers. With warm waters, gentle swells, and expert instructors available, Thailand’s beaches offer an inviting setting to catch your first wave or refine your skills. Embrace the spirit of adventure and let the sea energize your body and soul.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mySlides">
+                <div class="imgtext"><h4>Massage</h4></div>
+                <div class="slide-content">
+                    <img class="slideshow" src="./photos/IMG_6328.jpg" alt="Massage">
+                    <div class="description">
+                        <p>Indulge in the art of relaxation with our traditional Thai massage experience. Set in a serene and calming environment, our skilled therapists use time-honored techniques to melt away tension, restore balance, and rejuvenate both body and mind. Whether you seek deep muscle relief or gentle relaxation, each session is tailored to your needs, offering an essential escape into tranquility during your stay.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mySlides">
+                <div class="imgtext"><h4>Meditation</h4></div>
+                <div class="slide-content">
+                    <img class="slideshow" src="./photos/IMG_6329.JPG" alt="Meditation">
+                    <div class="description">
+                        <p>Reconnect with yourself through our guided meditation sessions, set in a peaceful and inspiring environment. Whether you are new to meditation or deepening your practice, our experienced instructors will lead you through techniques that calm the mind, restore emotional balance, and awaken a sense of inner harmony. It’s a perfect opportunity to slow down, breathe deeply, and embrace the serenity of your surroundings.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mySlides">
+                <div class="imgtext"><h4>Shopping</h4></div>
+                <div class="slide-content">
+                    <img class="slideshow" src="./photos/IMG_6333.jpg" alt="Shopping">
+                    <div class="description">
+                        <p>Explore the vibrant world of Thai craftsmanship and style with our curated shopping experiences. From bustling local markets to elegant boutiques, discover everything from handmade textiles and artisanal jewelry to contemporary fashion and home décor. Whether you're searching for the perfect souvenir or a one-of-a-kind piece, shopping in Thailand offers a journey full of color, culture, and unforgettable finds.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mySlides">
+                <div class="imgtext"><h4>Boat Ride</h4></div>
+                <div class="slide-content">
+                    <img class="slideshow" src="./photos/IMG_6331.jpg" alt="Boat Ride">
+                    <div class="description">
+                        <p>Embark on a breathtaking boat ride through Thailand’s stunning waterscapes. Glide past lush islands, hidden lagoons, and vibrant coastal villages as you soak in the natural beauty that surrounds you. Whether you choose a traditional long-tail boat or a private charter, every journey offers a unique glimpse into the heart of Thailand’s coastal charm and timeless allure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- buttons -->
+    </div>
+    <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+    <!-- refer to thejavascript -->
+        <script src="js.js"></script>
+        <script src="button.js"></script>
+    </body>
+</html>

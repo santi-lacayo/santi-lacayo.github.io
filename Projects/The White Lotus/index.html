@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- title of website -->
+        <title>The White Lotus</title>
+        <link rel="stylesheet" href="style.css"> 
+        <!-- AOS Animate On Scroll CSS & JS -->
+        <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  
+    </head>
+    <body> 
+        <!-- class in charge of items in header so logo + title -->
+         <div class="header1">
+            <!-- palm tree logo -->
+            <div class="logo">
+                <img src="./photos/logo.png">
+            </div>
+            <!-- Title in website -->
+            <div class="title1">
+                <h1>THE WHITE LOTUS</h1>
+            </div>
+            <!-- book button -->
+            <div class="booking">
+                <button id="bookButton">Book</button>
+            </div>
+        </div>
+        <!-- navbar with links to all parts of the website -->
+        <div class="navbar">
+            <a href="./">Home</a>
+            <a href="./Accomodations.html">Accomodations</a>
+            <a href="./Experiences.html">Experiences</a>
+            <a href="./Dining.html">Dining</a>
+            <a href="./AboutUs.html">About-Us</a>
+        </div>
+        <!-- Information about the hotel -->
+        <div class="info" >
+        <p> Welcome to The White Lotus, your paradise in Koh Samui, Thailand. Enjoy stunning ocean views from our suites, relax with personalized activities, and unwind by the azure waters. Whether you seek adventure or tranquility, we're here to make your stay unforgettable</p>
+        </div>
+        <!-- Makes a row class and column classes inside to dipslay images -->
+        <div class="row" >
+            <div class="column">
+                <img src="./photos/IMG_6230.jpg" width="40%">
+            </div>
+            <div class="column">
+                <img src="./photos/IMG_6231.jpg" width="40%">
+            </div>
+            <div class="column">
+                <img src="./photos/IMG_6232.jpg" width="40%">
+            </div>
+        </div>
+    <!-- infobox class to have at bottom of page with text and an image -->
+    <div class="infobox" data-aos="fade-up">
+      <div class="footer">
+        <p>
+          Our hotel has been recognized as the best hotel to stay in Thailand
+        </p>
+        <img src="./photos/IMG_6233.jpg" alt="Hotel image">
+      </div>
+    </div>
+    <script src="button.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    </body>
+</html>
